@@ -354,9 +354,22 @@
     },
     {
       "year": 1996,
+      "warp": 1,
+      "viable": 2,
+      "image": "sm64",
       "title": "Super Mario 64",
       "platform": [
-        { "name": "N64" }
+        { "name": "N64", "works": true }
+      ],
+      "links": [
+        {
+          "text": "6:32.150 by Dowsky",
+          "url": "https://youtu.be/FAJHI1Bte7I"
+        },
+        {
+          "text": "speedrun.com Category",
+          "url": "https://www.speedrun.com/sm64#0_Star"
+        }
       ]
     },
     {
