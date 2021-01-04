@@ -175,6 +175,7 @@
       "minor": 2,
       "year": 1987,
       "rmk": true,
+      "image": "mb-c64",
       "title": "Mario Bros. (Ocean Software version)",
       "platform": [
         { "name": "Commodore 64" }
