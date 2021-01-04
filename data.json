@@ -138,10 +138,12 @@
     {
       "minor": 2,
       "year": 1986,
+      "image": "smbs",
       "title": "Super Mario Bros. Special",
       "rmk": true,
       "platform": [
-        { "name": "NEC PC-8801" }
+        { "name": "NEC PC-8801" },
+        { "name": "Sharp X1" }
       ]
     },
     {
