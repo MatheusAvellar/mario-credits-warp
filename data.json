@@ -37,6 +37,7 @@
     {
       "minor": 1,
       "year": 1982,
+      "image": "dkjr",
       "title": "Donkey Kong Jr.",
       "platform": [
         { "name": "Arcade" },
@@ -70,7 +71,7 @@
       ]
     },
     {
-      "minor": 2,
+      "rmk": true,
       "year": 1984,
       "title": "Mario Bros. Special",
       "platform": [
@@ -83,6 +84,7 @@
     {
       "minor": 2,
       "year": 1984,
+      "image": "pbmb",
       "title": "Punch Ball Mario Bros.",
       "platform": [
         { "name": "NEC PC-8801" },
@@ -94,6 +96,7 @@
     {
       "minor": 2,
       "year": 1984,
+      "image": "vswc",
       "title": "Vs. Wrecking Crew",
       "platform": [
         { "name": "Arcade" }
@@ -102,6 +105,7 @@
     {
       "minor": 2,
       "year": 1985,
+      "image": "wc",
       "title": "Wrecking Crew",
       "platform": [
         { "name": "NES" },
@@ -126,7 +130,6 @@
       ]
     },
     {
-      "minor": 2,
       "year": 1986,
       "image": "vssmb",
       "title": "VS. Super Mario Bros.",
@@ -136,7 +139,6 @@
       ]
     },
     {
-      "minor": 2,
       "year": 1986,
       "image": "smbs",
       "title": "Super Mario Bros. Special",
@@ -164,7 +166,6 @@
       ]
     },
     {
-      "minor": 2,
       "year": 1986,
       "rmk": true,
       "image": "annsmb",
@@ -174,7 +175,6 @@
       ]
     },
     {
-      "minor": 2,
       "year": 1987,
       "rmk": true,
       "image": "mb-c64",
@@ -221,7 +221,6 @@
       ]
     },
     {
-      "minor": 2,
       "year": 1988,
       "image": "kmb",
       "title": "Kaettekita Mario Bros.",
@@ -280,14 +279,14 @@
     },
     {
       "year": 1993,
+      "rmk": true,
+      "warp": 1,
+      "viable": 2,
       "image": "smas",
       "title": "Super Mario All-Stars",
       "platform": [
         { "name": "SNES", "works": true }
       ],
-      "rmk": true,
-      "warp": 1,
-      "viable": 2,
       "links": [
         {
           "text": "MrPyt1001's video on The Lost Levels' Wrong Warp",
@@ -307,7 +306,7 @@
       ]
     },
     {
-      "minor": 2,
+      "rmk": true,
       "year": 1994,
       "image": "dk94",
       "title": "Donkey Kong '94",
@@ -336,7 +335,6 @@
       ]
     },
     {
-      "minor": 2,
       "year": 1995,
       "title": "BS Super Mario USA Power Challenge",
       "rmk": true,
@@ -347,6 +345,7 @@
     {
       "minor": 2,
       "year": 1995,
+      "image": "mc",
       "title": "Mario Clash",
       "platform": [
         { "name": "Virtual Boy" }
@@ -373,7 +372,6 @@
       ]
     },
     {
-      "minor": 2,
       "year": 1998,
       "title": "BS Super Mario Collection",
       "rmk": true,
@@ -393,6 +391,7 @@
     {
       "minor": 1,
       "year": 2001,
+      "image": "sma1",
       "title": "Super Mario Advance",
       "platform": [
         { "name": "GBA" }
@@ -409,6 +408,7 @@
     },
     {
       "year": 2002,
+      "image": "sms",
       "title": "Super Mario Sunshine",
       "platform": [
         { "name": "GC" }

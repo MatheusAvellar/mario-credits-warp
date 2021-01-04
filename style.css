@@ -1,6 +1,7 @@
 html {
   font-size: 16px;
   font-family: sans-serif;
+  overflow-y: scroll;
 }
 header,main {
   max-width: 600px;
@@ -35,6 +36,7 @@ ol,ul {
   padding: 1em;
   margin: 2px;
   list-style: none;
+  display: none;
 }
 #games-list .image-section {
   vertical-align: top;
@@ -104,15 +106,9 @@ li[data-warp="2"][data-viable="2"] {
   background-color: #8bc34a;
 }
 
-#games-list:not([data-filter-major]) > li:not([data-minor]) {
-  display: none;
-}
-#games-list:not([data-filter-minor-1]) > li[data-minor="1"] {
-  display: none;
-}
-#games-list:not([data-filter-minor-2]) > li[data-minor="2"] {
-  display: none;
-}
-#games-list:not([data-filter-rmk]) > li[data-rmk] {
-  display: none;
+#games-list[data-filter-major] > li:not([data-minor]),
+#games-list[data-filter-minor-1] > li[data-minor="1"],
+#games-list[data-filter-minor-2] > li[data-minor="2"],
+#games-list[data-filter-rmk] > li[data-rmk] {
+  display: block;
 }
