@@ -1,0 +1,559 @@
+{
+  "data": [
+    {
+      "year": 1981,
+      "warp": 1,
+      "viable": 2,
+      "image": "dk",
+      "title": "Donkey Kong",
+      "platform": [
+        { "name": "Arcade" },
+        { "name": "INTV" },
+        { "name": "ColecoVision" },
+        { "name": "Atari 2600" },
+        { "name": "TRS-80 CoCo" },
+        { "name": "Atari 8-bit" },
+        { "name": "TI-99/4a" },
+        { "name": "IBM PC Booter" },
+        { "name": "Commodore 64" },
+        { "name": "Commodore VIC-20" },
+        { "name": "Famicom" },
+        { "name": "NES", "works": true },
+        { "name": "MSX" },
+        { "name": "ZX Spectrum" },
+        { "name": "Amstrad CPC" },
+        { "name": "Atari 7800" },
+        { "name": "FDS" },
+        { "name": "e-Reader" },
+        { "name": "GBA" }
+      ],
+      "links": [
+        {
+          "text": "1:02.763 by CaptainSpeedruns",
+          "url": "https://youtu.be/jqUEH489CHk?t=17"
+        }
+      ]
+    },
+    {
+      "minor": 1,
+      "year": 1982,
+      "title": "Donkey Kong Jr.",
+      "platform": [
+        { "name": "Arcade" },
+        { "name": "Atari 2600" },
+        { "name": "ColecoVision" },
+        { "name": "Atari 8-bit" },
+        { "name": "Famicom" },
+        { "name": "Atari 7800" },
+        { "name": "NES" },
+        { "name": "FDS" },
+        { "name": "e-Reader" }
+      ]
+    },
+    {
+      "year": 1983,
+      "image": "mb",
+      "title": "Mario Bros.",
+      "platform": [
+        { "name": "Arcade" },
+        { "name": "Famicom" },
+        { "name": "Atari 2600" },
+        { "name": "Atari 5200" },
+        { "name": "Commodore 64" },
+        { "name": "NES" },
+        { "name": "Amstrad CPC" },
+        { "name": "ZX Spectrum" },
+        { "name": "Atari 7800" },
+        { "name": "Atari 8-bit" },
+        { "name": "e-Reader" },
+        { "name": "GBA" }
+      ]
+    },
+    {
+      "minor": 2,
+      "year": 1984,
+      "title": "Mario Bros. Special",
+      "platform": [
+        { "name": "NEC PC-8801" },
+        { "name": "Apple II" },
+        { "name": "FM-7" },
+        { "name": "Sharp X1" }
+      ]
+    },
+    {
+      "minor": 2,
+      "year": 1984,
+      "title": "Punch Ball Mario Bros.",
+      "platform": [
+        { "name": "NEC PC-8801" },
+        { "name": "Apple II" },
+        { "name": "FM-7" },
+        { "name": "Sharp X1" }
+      ]
+    },
+    {
+      "minor": 2,
+      "year": 1984,
+      "title": "Vs. Wrecking Crew",
+      "platform": [
+        { "name": "Arcade" }
+      ]
+    },
+    {
+      "minor": 2,
+      "year": 1985,
+      "title": "Wrecking Crew",
+      "platform": [
+        { "name": "NES" },
+        { "name": "FDS" }
+      ]
+    },
+    {
+      "year": 1985,
+      "warp": 1,
+      "viable": 2,
+      "image": "smb1",
+      "title": "Super Mario Bros.",
+      "platform": [
+        { "name": "NES", "works": true },
+        { "name": "FDS", "works": true }
+      ],
+      "links": [
+        {
+          "text": "4:55.646 by Kosmic",
+          "url": "https://youtu.be/1wR8x5b_ExM?t=137"
+        }
+      ]
+    },
+    {
+      "minor": 2,
+      "year": 1986,
+      "image": "vssmb",
+      "title": "VS. Super Mario Bros.",
+      "rmk": true,
+      "platform": [
+        { "name": "Arcade" }
+      ]
+    },
+    {
+      "minor": 2,
+      "year": 1986,
+      "title": "Super Mario Bros. Special",
+      "rmk": true,
+      "platform": [
+        { "name": "NEC PC-8801" }
+      ]
+    },
+    {
+      "year": 1986,
+      "warp": 1,
+      "viable": 2,
+      "image": "smbtll",
+      "title": "Super Mario Bros.: The Lost Levels",
+      "platform": [
+        { "name": "FDS", "works": true },
+        { "name": "Wii U" }
+      ],
+      "links": [
+        {
+          "text": "7:56.016 by Kosmic",
+          "url": "https://youtu.be/aG-pINiqNms"
+        }
+      ]
+    },
+    {
+      "minor": 2,
+      "year": 1986,
+      "rmk": true,
+      "image": "annsmb",
+      "title": "All Night Nippon: Super Mario Bros.",
+      "platform": [
+        { "name": "FDS" }
+      ]
+    },
+    {
+      "minor": 2,
+      "year": 1987,
+      "rmk": true,
+      "title": "Mario Bros. (Ocean Software version)",
+      "platform": [
+        { "name": "Commodore 64" }
+      ]
+    },
+    {
+      "year": 1988,
+      "warp": 2,
+      "viable": 1,
+      "image": "smb2",
+      "title": "Super Mario Bros. 2",
+      "platform": [
+        { "name": "NES", "works": true },
+        { "name": "FDS" }
+      ],
+      "links": [
+        {
+          "text": "TAS by Maru and total",
+          "url": "https://youtu.be/OQc8wjBp7J8"
+        }
+      ]
+    },
+    {
+      "year": 1988,
+      "warp": 2,
+      "viable": 2,
+      "image": "smb3",
+      "title": "Super Mario Bros. 3",
+      "platform": [
+        { "name": "NES", "works": true }
+      ],
+      "links": [
+        {
+          "text": "3:03.566 by Zikubi",
+          "url": "https://www.twitch.tv/videos/543434666"
+        },
+        {
+          "text": "speedrun.com Category",
+          "url": "https://www.speedrun.com/smb3#Any"
+        }
+      ]
+    },
+    {
+      "minor": 2,
+      "year": 1988,
+      "image": "kmb",
+      "title": "Kaettekita Mario Bros.",
+      "rmk": true,
+      "platform": [
+        { "name": "Famicom" }
+      ]
+    },
+    {
+      "year": 1989,
+      "image": "sml1",
+      "title": "Super Mario Land",
+      "platform": [
+        { "name": "GB" }
+      ]
+    },
+    {
+      "year": 1990,
+      "warp": 2,
+      "viable": 2,
+      "image": "smw",
+      "title": "Super Mario World",
+      "platform": [
+        { "name": "SNES", "works": true }
+      ],
+      "links": [
+        {
+          "text": "0:41.020 by FURiOUS",
+          "url": "https://www.twitch.tv/videos/648047780?t=1h7m40s"
+        },
+        {
+          "text": "speedrun.com Category",
+          "url": "https://www.speedrun.com/smw#0_Exit"
+        }
+      ]
+    },
+    {
+      "year": 1992,
+      "warp": 2,
+      "viable": 2,
+      "image": "sml2",
+      "title": "Super Mario Land 2: 6 Golden Coins",
+      "platform": [
+        { "name": "GB", "works": true }
+      ],
+      "links": [
+        {
+          "text": "2:42.950 by Oh_DeeR",
+          "url": "https://youtu.be/o55aSEnYCdE"
+        },
+        {
+          "text": "speedrun.com Category",
+          "url": "https://www.speedrun.com/sml2#Any"
+        }
+      ]
+    },
+    {
+      "year": 1993,
+      "image": "smas",
+      "title": "Super Mario All-Stars",
+      "platform": [
+        { "name": "SNES", "works": true }
+      ],
+      "rmk": true,
+      "warp": 1,
+      "viable": 2,
+      "links": [
+        {
+          "text": "MrPyt1001's video on The Lost Levels' Wrong Warp",
+          "url": "https://youtu.be/OGde-ukzG0M"
+        }
+      ]
+    },
+    {
+      "minor": 1,
+      "year": 1994,
+      "image": "sml3",
+      "title": "Super Mario Land 3: Wario Land",
+      "platform": [
+        { "name": "GB" }
+      ],
+      "links": [
+      ]
+    },
+    {
+      "minor": 2,
+      "year": 1994,
+      "image": "dk94",
+      "title": "Donkey Kong '94",
+      "platform": [
+        { "name": "GB"  }
+      ]
+    },
+    {
+      "year": 1995,
+      "warp": 2,
+      "viable": 2,
+      "image": "yi",
+      "title": "Super Mario World 2: Yoshi's Island",
+      "platform": [
+        { "name": "SNES", "works": true }
+      ],
+      "links": [
+        {
+          "text": "2:25.217 by Poahr",
+          "url": "https://youtu.be/iWmKt-nj9jo"
+        },
+        {
+          "text": "speedrun.com Category",
+          "url": "https://www.speedrun.com/yi#Any"
+        }
+      ]
+    },
+    {
+      "minor": 2,
+      "year": 1995,
+      "title": "BS Super Mario USA Power Challenge",
+      "rmk": true,
+      "platform": [
+        { "name": "Satellaview" }
+      ]
+    },
+    {
+      "minor": 2,
+      "year": 1995,
+      "title": "Mario Clash",
+      "platform": [
+        { "name": "Virtual Boy" }
+      ]
+    },
+    {
+      "year": 1996,
+      "title": "Super Mario 64",
+      "platform": [
+        { "name": "N64" }
+      ]
+    },
+    {
+      "minor": 1,
+      "year": 1999,
+      "image": "smbdx",
+      "title": "Super Mario Bros. Deluxe",
+      "platform": [
+        { "name": "GBC" }
+      ]
+    },
+    {
+      "minor": 1,
+      "year": 2001,
+      "title": "Super Mario Advance",
+      "platform": [
+        { "name": "GBA" }
+      ]
+    },
+    {
+      "minor": 1,
+      "year": 2001,
+      "image": "sma2",
+      "title": "Super Mario Advance 2: Super Mario World",
+      "platform": [
+        { "name": "GBA" }
+      ]
+    },
+    {
+      "year": 2002,
+      "title": "Super Mario Sunshine",
+      "platform": [
+        { "name": "GC" }
+      ]
+    },
+    {
+      "minor": 1,
+      "year": 2002,
+      "image": "sma3",
+      "title": "Super Mario Advance 3: Yoshi's Island",
+      "platform": [
+        { "name": "GBA" }
+      ]
+    },
+    {
+      "minor": 1,
+      "year": 2003,
+      "image": "sma4",
+      "title": "Super Mario Advance 4: Super Mario Bros. 3",
+      "platform": [
+        { "name": "GBA" }
+      ]
+    },
+    {
+      "minor": 1,
+      "year": 2004,
+      "image": "mvsdk",
+      "title": "Mario vs. Donkey Kong",
+      "platform": [
+        { "name": "GBA" }
+      ]
+    },
+    {
+      "year": 2004,
+      "title": "Super Mario 64 DS",
+      "platform": [
+        { "name": "DS" }
+      ]
+    },
+    {
+      "minor": 2,
+      "year": 2005,
+      "title": "Yoshi's Universal Gravitation",
+      "platform": [
+        { "name": "GBA" }
+      ]
+    },
+    {
+      "minor": 2,
+      "year": 2006,
+      "title": "Super Princess Peach",
+      "platform": [
+        { "name": "DS" }
+      ]
+    },
+    {
+      "year": 2006,
+      "title": "New Super Mario Bros.",
+      "platform": [
+        { "name": "DS" }
+      ]
+    },
+    {
+      "minor": 1,
+      "year": 2006,
+      "title": "Yoshi's Island DS",
+      "platform": [
+        { "name": "DS" }
+      ]
+    },
+    {
+      "year": 2007,
+      "title": "Super Mario Galaxy",
+      "platform": [
+        { "name": "Wii" }
+      ]
+    },
+    {
+      "year": 2009,
+      "title": "New Super Mario Bros. Wii",
+      "platform": [
+        { "name": "Wii" }
+      ]
+    },
+    {
+      "year": 2010,
+      "title": "Super Mario Galaxy 2",
+      "platform": [
+        { "name": "Wii" }
+      ]
+    },
+    {
+      "year": 2011,
+      "title": "Super Mario 3D Land",
+      "platform": [
+        { "name": "3DS" }
+      ]
+    },
+    {
+      "year": 2012,
+      "title": "New Super Mario Bros. 2",
+      "platform": [
+        { "name": "3DS" }
+      ]
+    },
+    {
+      "year": 2012,
+      "title": "New Super Mario Bros. U",
+      "platform": [
+        { "name": "Wii U" }
+      ]
+    },
+    {
+      "year": 2013,
+      "title": "New Super Luigi U",
+      "platform": [
+        { "name": "Wii U" }
+      ]
+    },
+    {
+      "year": 2013,
+      "title": "Super Mario 3D World",
+      "platform": [
+        { "name": "Wii U" }
+      ]
+    },
+    {
+      "minor": 1,
+      "year": 2014,
+      "title": "Yoshi's New Island",
+      "platform": [
+        { "name": "3DS" }
+      ]
+    },
+    {
+      "year": 2015,
+      "title": "Super Mario Maker",
+      "platform": [
+        { "name": "Wii U" }
+      ]
+    },
+    {
+      "minor": 1,
+      "year": 2016,
+      "title": "Super Mario Maker for Nintendo 3DS",
+      "platform": [
+        { "name": "3DS" }
+      ]
+    },
+    {
+      "year": 2017,
+      "title": "Super Mario Odyssey",
+      "platform": [
+        { "name": "Switch" }
+      ]
+    },
+    {
+      "year": 2019,
+      "title": "New Super Mario Bros. U Deluxe",
+      "rmk": true,
+      "platform": [
+        { "name": "Switch" }
+      ]
+    },
+    {
+      "year": 2019,
+      "title": "Super Mario Maker 2",
+      "platform": [
+        { "name": "Switch" }
+      ]
+    }
+  ]
+}

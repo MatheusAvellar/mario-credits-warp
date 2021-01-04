@@ -1,0 +1,108 @@
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+header,main {
+  max-width: 600px;
+  margin: auto;
+}
+h1, h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+p {
+  margin: 0;
+}
+time {
+  font-weight: normal;
+}
+
+ol,ul {
+  margin: 0;
+  padding: 0;
+}
+#notes {
+  font-size: 75%;
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #b0b0b0;
+}
+#notes li {
+  list-style: none;
+  padding: .5em;
+}
+#games-list li {
+  padding: 1em;
+  margin: 2px;
+  overflow-y: auto;
+}
+#games-list li img {
+  width: 30%;
+  float: left;
+  margin-right: 1em;
+  image-rendering: -webkit-optimize-contrast;
+}
+.viability {
+  display: inline-block;
+  font-size: 75%;
+}
+.viability + .viability::before {
+  content: "·";
+  margin: 0 .5em;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  font-size: 75%;
+  margin-top: 1em;
+}
+.platform {
+  font-size: 75%;
+  margin-top: 1em;
+  line-height: 1.5;
+}
+.platform > span {
+  border: 1px solid transparent;
+  margin: .075em .25em;
+  color: #777;
+  padding: .1em .25em;
+  border-radius: 3px;
+  background-color: rgba(0,0,0,.1);
+  display: inline-block;
+}
+.platform > .works {
+  border-color: #2196f3;
+  color: #0062c7;
+  background-color: rgba(0,131,255,.1);
+}
+li[data-warp="0"] {
+  background-color: #aeaeae;
+}
+li[data-warp="1"][data-viable="1"] {
+  background-color: #d6d4b9;
+}
+li[data-warp="1"][data-viable="2"] {
+  background-color: #ece496;
+}
+li[data-warp="2"][data-viable="0"] {
+  background-color: #66c0cc;
+}
+li[data-warp="2"][data-viable="1"] {
+  background-color: #cddc39;
+}
+li[data-warp="2"][data-viable="2"] {
+  background-color: #8bc34a;
+}
+
+#games-list:not([data-filter-major]) > li:not([data-minor]) {
+  display: none;
+}
+#games-list:not([data-filter-minor-1]) > li[data-minor="1"] {
+  display: none;
+}
+#games-list:not([data-filter-minor-2]) > li[data-minor="2"] {
+  display: none;
+}
+#games-list:not([data-filter-rmk]) > li[data-rmk] {
+  display: none;
+}
