@@ -34,12 +34,20 @@ ol,ul {
 #games-list li {
   padding: 1em;
   margin: 2px;
-  overflow-y: auto;
+  list-style: none;
+}
+#games-list .image-section {
+  vertical-align: top;
+  display: inline-block;
+  width: calc(30% - 1em);
+  margin-right: 1em;
+}
+#games-list .text-section {
+  display: inline-block;
+  width: 70%;
 }
 #games-list li img {
-  width: 30%;
-  float: left;
-  margin-right: 1em;
+  max-width: 100%;
   image-rendering: -webkit-optimize-contrast;
 }
 .viability {

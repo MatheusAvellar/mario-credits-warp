@@ -77,10 +77,15 @@ function addGame(g) {
     li.dataset.rmk = "";
   }
   ///////////////////////////
-  if(g.image) {
+  const section_image = document.createElement("section");
+  section_image.className = "image-section";
+  const section_text = document.createElement("section");
+  section_text.className = "text-section";
+  ///////////////////////////
+  if("image" in g) {
     const image = document.createElement("img");
     image.src = `./images/${g.image}.png`;
-    li.appendChild(image);
+    section_image.appendChild(image);
   }
   ///////////////////////////
   const title = document.createElement("h2");
@@ -88,7 +93,7 @@ function addGame(g) {
   year.textContent = `(${g.year}) `;
   title.appendChild(year);
   title.appendChild(document.createTextNode(g.title));
-  li.appendChild(title);
+  section_text.appendChild(title);
   ///////////////////////////
   if("viable" in g) {
     const div = document.createElement("div");
@@ -100,7 +105,7 @@ function addGame(g) {
     human_p.classList.add("viability");
     human_p.textContent = VIABILITY[+g.viable]||"";
     div.appendChild(human_p);
-    li.appendChild(div);
+    section_text.appendChild(div);
   }
   ///////////////////////////
   if("links" in g) {
@@ -112,7 +117,7 @@ function addGame(g) {
       a.setAttribute("href", l.url);
       div.appendChild(a);
     });
-    li.appendChild(div);
+    section_text.appendChild(div);
   }
   ///////////////////////////
   if("platform" in g) {
@@ -126,9 +131,11 @@ function addGame(g) {
       }
       platform.appendChild(span);
     });
-    li.appendChild(platform);
+    section_text.appendChild(platform);
   }
 
+  li.appendChild(section_image);
+  li.appendChild(section_text);
   games_list.appendChild(li);
 }
 
