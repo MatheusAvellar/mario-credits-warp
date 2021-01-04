@@ -106,7 +106,7 @@ li[data-warp="2"][data-viable="2"] {
   background-color: #8bc34a;
 }
 
-#games-list[data-filter-major] > li:not([data-minor]),
+#games-list[data-filter-major] > li:not([data-minor]):not([data-rmk]),
 #games-list[data-filter-minor-1] > li[data-minor="1"],
 #games-list[data-filter-minor-2] > li[data-minor="2"],
 #games-list[data-filter-rmk] > li[data-rmk] {
