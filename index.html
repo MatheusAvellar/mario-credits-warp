@@ -124,12 +124,12 @@ function addGame(g) {
     const platform = document.createElement("div");
     platform.classList.add("platform");
     g.platform.forEach(p => {
-      const span = document.createElement("span");
-      span.textContent = p.name;
+      const pel = document.createElement("div");
+      pel.textContent = p.name;
       if("works" in p && p.works) {
-        span.classList.add("works");
+        pel.classList.add("works");
       }
-      platform.appendChild(span);
+      platform.appendChild(pel);
     });
     section_text.appendChild(platform);
   }

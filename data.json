@@ -341,7 +341,7 @@
       "title": "BS Super Mario USA Power Challenge",
       "rmk": true,
       "platform": [
-        { "name": "Satellaview" }
+        { "name": "SNES" }
       ]
     },
     {
@@ -370,6 +370,15 @@
           "text": "speedrun.com Category",
           "url": "https://www.speedrun.com/sm64#0_Star"
         }
+      ]
+    },
+    {
+      "minor": 2,
+      "year": 1998,
+      "title": "BS Super Mario Collection",
+      "rmk": true,
+      "platform": [
+        { "name": "SNES" }
       ]
     },
     {
@@ -567,6 +576,14 @@
     {
       "year": 2019,
       "title": "Super Mario Maker 2",
+      "platform": [
+        { "name": "Switch" }
+      ]
+    },
+    {
+      "year": 2020,
+      "rmk": true,
+      "title": "Super Mario Bros. 35",
       "platform": [
         { "name": "Switch" }
       ]

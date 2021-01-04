@@ -68,8 +68,10 @@ ol,ul {
   font-size: 75%;
   margin-top: 1em;
   line-height: 1.5;
+  display: flex;
+  flex-wrap: wrap;
 }
-.platform > span {
+.platform > div {
   border: 1px solid transparent;
   margin: .075em .25em;
   color: #777;
