@@ -308,10 +308,22 @@
     {
       "rmk": true,
       "year": 1994,
+      "warp": 1,
+      "viable": 2,
       "image": "dk94",
       "title": "Donkey Kong '94",
       "platform": [
-        { "name": "GB"  }
+        { "name": "GB", "works": true  }
+      ],
+      "links": [
+        {
+          "text": "36:12.840 by LudwigVonKoopa",
+          "url": "https://youtu.be/JYjrNnqiloA?t=9"
+        },
+        {
+          "text": "speedrun.com Category",
+          "url": "https://www.speedrun.com/dk94#Beat_the_Game_Glitched"
+        }
       ]
     },
     {
