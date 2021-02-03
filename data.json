@@ -573,9 +573,22 @@
     },
     {
       "year": 2017,
+      "warp": 1,
+      "viable": 2,
+      "image": "smo",
       "title": "Super Mario Odyssey",
       "platform": [
-        { "name": "Switch" }
+        { "name": "Switch", "works": true }
+      ],
+      "links": [
+        {
+          "text": "Sequence Break showcase by Fir",
+          "url": "https://youtu.be/gWYmV0bs15w?t=713"
+        },
+        {
+          "text": "speedrun.com Category",
+          "url": "https://www.speedrun.com/smo#Any"
+        }
       ]
     },
     {
