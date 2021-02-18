@@ -545,7 +545,8 @@
       "year": 2013,
       "title": "Super Mario 3D World",
       "platform": [
-        { "name": "Wii U" }
+        { "name": "Wii U" },
+        { "name": "Switch" }
       ]
     },
     {
@@ -609,7 +610,22 @@
     {
       "year": 2020,
       "rmk": true,
+      "title": "Super Mario 3D All-Stars",
+      "platform": [
+        { "name": "Switch" }
+      ]
+    },
+    {
+      "year": 2020,
+      "rmk": true,
       "title": "Super Mario Bros. 35",
+      "platform": [
+        { "name": "Switch" }
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "Bowser's Fury",
       "platform": [
         { "name": "Switch" }
       ]
