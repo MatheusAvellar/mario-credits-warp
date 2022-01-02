@@ -7,25 +7,9 @@
       "image": "dk",
       "title": "Donkey Kong",
       "platform": [
-        { "name": "Arcade" },
-        { "name": "INTV" },
-        { "name": "ColecoVision" },
-        { "name": "Atari 2600" },
-        { "name": "TRS-80 CoCo" },
-        { "name": "Atari 8-bit" },
-        { "name": "TI-99/4a" },
-        { "name": "IBM PC Booter" },
-        { "name": "Commodore 64" },
-        { "name": "Commodore VIC-20" },
         { "name": "Famicom" },
         { "name": "NES", "works": true },
-        { "name": "MSX" },
-        { "name": "ZX Spectrum" },
-        { "name": "Amstrad CPC" },
-        { "name": "Atari 7800" },
-        { "name": "FDS" },
-        { "name": "e-Reader" },
-        { "name": "GBA" }
+        { "name": "FDS" }
       ],
       "links": [
         {
@@ -40,15 +24,9 @@
       "image": "dkjr",
       "title": "Donkey Kong Jr.",
       "platform": [
-        { "name": "Arcade" },
-        { "name": "Atari 2600" },
-        { "name": "ColecoVision" },
-        { "name": "Atari 8-bit" },
         { "name": "Famicom" },
-        { "name": "Atari 7800" },
         { "name": "NES" },
-        { "name": "FDS" },
-        { "name": "e-Reader" }
+        { "name": "FDS" }
       ]
     },
     {
@@ -56,18 +34,8 @@
       "image": "mb",
       "title": "Mario Bros.",
       "platform": [
-        { "name": "Arcade" },
         { "name": "Famicom" },
-        { "name": "Atari 2600" },
-        { "name": "Atari 5200" },
-        { "name": "Commodore 64" },
-        { "name": "NES" },
-        { "name": "Amstrad CPC" },
-        { "name": "ZX Spectrum" },
-        { "name": "Atari 7800" },
-        { "name": "Atari 8-bit" },
-        { "name": "e-Reader" },
-        { "name": "GBA" }
+        { "name": "NES" }
       ]
     },
     {
@@ -420,11 +388,21 @@
     },
     {
       "year": 2002,
+      "warp": 1,
+      "viable": 1,
       "image": "sms",
       "title": "Super Mario Sunshine",
       "platform": [
-        { "name": "GC" }
+        { "name": "GC", "works": true }
+      ],
+      "links": [
+        {
+          "text": "34:28.300 by Noki Doki",
+          "url": "https://youtu.be/I7E4huWppvc"
+        }
       ]
+
+
     },
     {
       "minor": 1,
