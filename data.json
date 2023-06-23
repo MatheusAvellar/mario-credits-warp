@@ -82,8 +82,8 @@
     },
     {
       "year": 1985,
-      "warp": 1,
-      "viable": 2,
+      "warp": 2,
+      "viable": 1,
       "image": "smb1",
       "title": "Super Mario Bros.",
       "platform": [
@@ -92,8 +92,8 @@
       ],
       "links": [
         {
-          "text": "4:55.646 by Kosmic",
-          "url": "https://youtu.be/1wR8x5b_ExM?t=137"
+          "text": "TAS by 100th Coin (memory injection via SMB3)",
+          "url": "https://youtu.be/xoDakIA31jc"
         }
       ]
     },
@@ -537,6 +537,7 @@
     },
     {
       "year": 2015,
+      "image": "smm",
       "title": "Super Mario Maker",
       "platform": [
         { "name": "Wii U" }
@@ -545,6 +546,7 @@
     {
       "minor": 1,
       "year": 2016,
+      "image": "smm3ds",
       "title": "Super Mario Maker for Nintendo 3DS",
       "platform": [
         { "name": "3DS" }
@@ -580,6 +582,7 @@
     },
     {
       "year": 2019,
+      "image": "smm2",
       "title": "Super Mario Maker 2",
       "platform": [
         { "name": "Switch" }
@@ -596,6 +599,7 @@
     {
       "year": 2020,
       "rmk": true,
+      "image": "smb35",
       "title": "Super Mario Bros. 35",
       "platform": [
         { "name": "Switch" }
@@ -604,6 +608,13 @@
     {
       "year": 2021,
       "title": "Bowser's Fury",
+      "platform": [
+        { "name": "Switch" }
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Super Mario Bros. Wonder",
       "platform": [
         { "name": "Switch" }
       ]
