@@ -1,191 +1,191 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Credits Warps</title>
-  <meta name="author" content="Matheus Avellar">
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-  <link rel="stylesheet" href="./style.css">
+	<meta charset="utf-8">
+	<title>Credits Warps</title>
+	<meta name="author" content="Matheus Avellar">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <header>
-    <h1>Post-Game Warp Status</h1>
-    <p>Of (some) Mario games</p>
-    <div id="notes">
-      <p><strong>Notes:</strong></p>
-      <ul>
-        <li>
-          Games listed here are of the Platformer category, other types of Mario
-          games have not been included;
-        </li>
-        <li>
-          Game & Watch and games with generally no level progression have
-          not been included;
-        </li>
-        <li>
-          I'm using the term "Post-Game" because pedants don't consider some of
-          these to be "real Credits Warps"
-        </li>
-      </ul>
-    </div>
-  </header>
-  <main>
-    <section>
-      <input checked id="show-major" type="checkbox">
-      <label for="show-major">Show major games</label>
-      <input id="show-minor" type="checkbox">
-      <label for="show-minor">Show minor games</label>
-      <input id="show-obsc" type="checkbox">
-      <label for="show-obsc">Show obscure games</label>
-    </section>
-    <section>
-      <input id="show-rmk" type="checkbox">
-      <label for="show-rmk">Show remakes/ports</label>
-    </section>
-    <section>
-      <ol id="games-list" data-filter-major></ol>
-    </section>
-  </main>
-  <script>
+	<header>
+		<h1>Post-Game Warp Status</h1>
+		<p>Of (some) Mario games</p>
+		<div id="notes">
+			<p><strong>Notes:</strong></p>
+			<ul>
+				<li>
+					Games listed here are of the Platformer category, other types of Mario
+					games have not been included;
+				</li>
+				<li>
+					Game & Watch and games with generally no level progression have
+					not been included;
+				</li>
+				<li>
+					I'm using the term "Post-Game" because pedants don't consider some of
+					these to be "real Credits Warps"
+				</li>
+			</ul>
+		</div>
+	</header>
+	<main>
+		<section>
+			<input checked id="show-major" type="checkbox">
+			<label for="show-major">Show major games</label>
+			<input id="show-minor" type="checkbox">
+			<label for="show-minor">Show minor games</label>
+			<input id="show-obsc" type="checkbox">
+			<label for="show-obsc">Show obscure games</label>
+		</section>
+		<section>
+			<input id="show-rmk" type="checkbox">
+			<label for="show-rmk">Show remakes/ports</label>
+		</section>
+		<section>
+			<ol id="games-list" data-filter-major></ol>
+		</section>
+	</main>
+	<script>
 const WARP_TYPE = [ "No warp / Unknown", "Wrong Warp / Sequence Break", "Post-Game Warp" ];
 const VIABILITY = [ "Unknown viability", "TAS viable", "Human viable" ];
 const games_list = document.getElementById("games-list");
 let games;
 
 function init() {
-  const request = new XMLHttpRequest();
-  request.open("GET", "./data.json", true);
-  request.onload = function() {
-    if(this.status >= 200 && this.status < 400) {
-      games = JSON.parse(this.response).data;
-      games.forEach(addGame);
-    }
-  };
-  request.send();
+	const request = new XMLHttpRequest();
+	request.open("GET", "./data.json", true);
+	request.onload = function() {
+		if(this.status >= 200 && this.status < 400) {
+			games = JSON.parse(this.response).data;
+			games.forEach(addGame);
+		}
+	};
+	request.send();
 }
 addEventListener("DOMContentLoaded", init);
 
 function addGame(g) {
-  const li = document.createElement("li");
-  li.dataset.warp = g.warp||0;
-  li.dataset.viable = g.viable||0;
-  if("minor" in g) {
-    li.dataset.minor = g.minor;
-  }
-  if("rmk" in g) {
-    li.dataset.rmk = "";
-  }
-  ///////////////////////////
-  const section_image = document.createElement("section");
-  section_image.className = "image-section";
-  const section_text = document.createElement("section");
-  section_text.className = "text-section";
-  ///////////////////////////
-  if("image" in g) {
-    const image = document.createElement("img");
-    image.src = `./images/${g.image}.png`;
-    section_image.appendChild(image);
-  }
-  ///////////////////////////
-  const title = document.createElement("h2");
-  const year = document.createElement("time");
-  year.textContent = `(${g.year}) `;
-  title.appendChild(year);
-  title.appendChild(document.createTextNode(g.title));
-  section_text.appendChild(title);
-  ///////////////////////////
-  if("viable" in g) {
-    const div = document.createElement("div");
-    const warp_p = document.createElement("p");
-    warp_p.classList.add("viability");
-    warp_p.textContent = `${WARP_TYPE[+g.warp]||""} is possible`;
-    div.appendChild(warp_p);
-    const human_p = document.createElement("p");
-    human_p.classList.add("viability");
-    human_p.textContent = VIABILITY[+g.viable]||"";
-    div.appendChild(human_p);
-    section_text.appendChild(div);
-  }
-  ///////////////////////////
-  if("links" in g) {
-    const div = document.createElement("div");
-    div.classList.add("links");
-    g.links.forEach(l => {
-      const a = document.createElement("a");
-      a.textContent = l.text;
-      a.setAttribute("href", l.url);
-      div.appendChild(a);
-    });
-    section_text.appendChild(div);
-  }
-  ///////////////////////////
-  if("platform" in g) {
-    const platform = document.createElement("div");
-    platform.classList.add("platform");
-    g.platform.forEach(p => {
-      const pel = document.createElement("div");
-      pel.textContent = p.name;
-      if("works" in p && p.works) {
-        pel.classList.add("works");
-      }
-      platform.appendChild(pel);
-    });
-    section_text.appendChild(platform);
-  }
+	const li = document.createElement("li");
+	li.dataset.warp = g.warp||0;
+	li.dataset.viable = g.viable||0;
+	if("minor" in g) {
+		li.dataset.minor = g.minor;
+	}
+	if("rmk" in g) {
+		li.dataset.rmk = "";
+	}
+	///////////////////////////
+	const section_image = document.createElement("section");
+	section_image.className = "image-section";
+	const section_text = document.createElement("section");
+	section_text.className = "text-section";
+	///////////////////////////
+	if("image" in g) {
+		const image = document.createElement("img");
+		image.src = `./images/${g.image}.png`;
+		section_image.appendChild(image);
+	}
+	///////////////////////////
+	const title = document.createElement("h2");
+	const year = document.createElement("time");
+	year.textContent = `(${g.year}) `;
+	title.appendChild(year);
+	title.appendChild(document.createTextNode(g.title));
+	section_text.appendChild(title);
+	///////////////////////////
+	if("viable" in g) {
+		const div = document.createElement("div");
+		const warp_p = document.createElement("p");
+		warp_p.classList.add("viability");
+		warp_p.textContent = `${WARP_TYPE[+g.warp]||""} is possible`;
+		div.appendChild(warp_p);
+		const human_p = document.createElement("p");
+		human_p.classList.add("viability");
+		human_p.textContent = VIABILITY[+g.viable]||"";
+		div.appendChild(human_p);
+		section_text.appendChild(div);
+	}
+	///////////////////////////
+	if("links" in g) {
+		const div = document.createElement("div");
+		div.classList.add("links");
+		g.links.forEach(l => {
+			const a = document.createElement("a");
+			a.textContent = l.text;
+			a.setAttribute("href", l.url);
+			div.appendChild(a);
+		});
+		section_text.appendChild(div);
+	}
+	///////////////////////////
+	if("platform" in g) {
+		const platform = document.createElement("div");
+		platform.classList.add("platform");
+		g.platform.forEach(p => {
+			const pel = document.createElement("div");
+			pel.textContent = p.name;
+			if("works" in p && p.works) {
+				pel.classList.add("works");
+			}
+			platform.appendChild(pel);
+		});
+		section_text.appendChild(platform);
+	}
 
-  li.appendChild(section_image);
-  li.appendChild(section_text);
-  games_list.appendChild(li);
+	li.appendChild(section_image);
+	li.appendChild(section_text);
+	games_list.appendChild(li);
 }
 
 document.getElementById("show-major").addEventListener("change", function() {
-  updateFilter(this.checked,"data-filter-major");
+	updateFilter(this.checked,"data-filter-major");
 });
 document.getElementById("show-minor").addEventListener("change", function() {
-  updateFilter(this.checked,"data-filter-minor-1");
+	updateFilter(this.checked,"data-filter-minor-1");
 });
 document.getElementById("show-obsc").addEventListener("change", function() {
-  updateFilter(this.checked,"data-filter-minor-2");
+	updateFilter(this.checked,"data-filter-minor-2");
 });
 document.getElementById("show-rmk").addEventListener("change", function() {
-  updateFilter(this.checked,"data-filter-rmk");
+	updateFilter(this.checked,"data-filter-rmk");
 });
 
 function updateFilter(checked,filter) {
-  if(checked) {
-    games_list.setAttribute(filter,"");
-    localStorage.setItem(filter, 1);
-  } else {
-    games_list.removeAttribute(filter);
-    localStorage.removeItem(filter);
-  }
+	if(checked) {
+		games_list.setAttribute(filter,"");
+		localStorage.setItem(filter, 1);
+	} else {
+		games_list.removeAttribute(filter);
+		localStorage.removeItem(filter);
+	}
 }
 
 (function getSavedFilters() {
-  const checkboxes = [
-    "show-major",
-    "show-minor",
-    "show-obsc",
-    "show-rmk"
-  ];
-  const filters = [
-    "data-filter-major",
-    "data-filter-minor-1",
-    "data-filter-minor-2",
-    "data-filter-rmk"
-  ];
-  filters.forEach((filter,i) => {
-    const v = localStorage.getItem(filter);
-    if(v !== null || !i) {
-      games_list.setAttribute(filter, "");
-      document.getElementById(checkboxes[i]).checked = true;
-    } else {
-      games_list.removeAttribute(filter);
-      document.getElementById(checkboxes[i]).checked = false;
-    }
-  });
+	const checkboxes = [
+		"show-major",
+		"show-minor",
+		"show-obsc",
+		"show-rmk"
+	];
+	const filters = [
+		"data-filter-major",
+		"data-filter-minor-1",
+		"data-filter-minor-2",
+		"data-filter-rmk"
+	];
+	filters.forEach((filter,i) => {
+		const v = localStorage.getItem(filter);
+		if(v !== null || !i) {
+			games_list.setAttribute(filter, "");
+			document.getElementById(checkboxes[i]).checked = true;
+		} else {
+			games_list.removeAttribute(filter);
+			document.getElementById(checkboxes[i]).checked = false;
+		}
+	});
 })();
-  </script>
+	</script>
 </body>
 </html>
